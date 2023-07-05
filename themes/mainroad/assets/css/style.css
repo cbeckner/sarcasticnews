@@ -355,7 +355,7 @@ dl {
 
 dt,
 dd {
-	display: list-item;
+	display: item;
 }
 
 dt {
@@ -901,6 +901,35 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .list__footer-readmore {
 	float: right;
 	margin-top: 10px;
+}
+
+.list__articles-container {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 50%);
+	justify-content: center;
+}
+
+.list__articles {
+	padding: 0;
+	margin: 15px 10px;
+	border-radius: 5px;
+	/* grid-row-end: span 2	; */
+}
+
+.list__articles h2 {
+	border-bottom: 2px solid {{ $highlightColor }};
+}
+
+.list__articles-list {
+	margin: 0;
+	list-style: none;
+}
+
+.list__articles-list li {
+	padding: .325rem 0;
+	border-bottom: 1px solid #ebebeb;
 }
 
 /* Pagination */

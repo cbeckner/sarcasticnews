@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Sarcastic News"
 theme = "mainroad"
 paginate = "10" # Number of posts per page
-#googleAnalytics = ''
+googleAnalytics = "G-MRRZYLYQC7"
 
 [Author] # Used in authorbox
   name = "John Doe"
@@ -11,8 +11,8 @@ paginate = "10" # Number of posts per page
   avatar = "img/avatar.png"
 
 [Params]
-  description = "John Doe's Personal blog about everything" # Site description. Used in meta description
-  copyright = "John Doe" # Footer copyright holder, otherwise will use site title
+  description = "Sarcastic News!  All the hot gossip from around the world" # Site description. Used in meta description
+  copyright = "XYZ Consulting LLC" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
@@ -20,10 +20,11 @@ paginate = "10" # Number of posts per page
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-  mainSections = ["post", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  post_meta = [ "date", "categories"] # Order of post meta information
+  mainSections = ["post", "news", "US", "World", "Technology", "Entertainment", "Other", "Politics"] # Specify section pages to show on home page and the "Recent articles" widget
+  subSections = ["World","Technology","Entertainment","Other", "Politics"]
   dateformat = "2006-01-02" # Change the format of dates
-  mathjax = true # Enable MathJax
+  mathjax = false # Enable MathJax
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
   googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
@@ -41,7 +42,7 @@ paginate = "10" # Number of posts per page
   fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
 
 [Params.logo]
-  image = "img/sarcastic-news-logo_clear.png" # Logo image. Path relative to "static"
+  image = "img/Sarcastic-news-logo_clear.png" # Logo image. Path relative to "static"
   title = "Sarcastic News" # Logo title, otherwise will use site title
   subtitle = "All the hot gossip from around the world" # Logo subtitle
 
@@ -53,10 +54,11 @@ paginate = "10" # Number of posts per page
   list = "left"  # Configure layout for list pages
   single = false # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["search", "recent", "categories",  "social"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  skip_num = 5 # Set the number of articles in the "Recent articles" widget to skip
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
 
@@ -65,7 +67,7 @@ paginate = "10" # Number of posts per page
   # Enable parts of social widget
   twitter = "username"
   instagram = "username"
-  email = "example@example.com"
+  email = "info@sarcastic.news"
 
 [[Params.widgets.social.custom]]
   title = "Sarcastic News"
